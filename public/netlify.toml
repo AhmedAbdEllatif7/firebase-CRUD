@@ -1,0 +1,9 @@
+[build]
+base = "public" # Specify your Laravel public directory
+command = "composer install && npm install && npm run production" # Build commands
+publish = "public" # Directory to publish (your Laravel public directory)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.php"
+  status = 200
